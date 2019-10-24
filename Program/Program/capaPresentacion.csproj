@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{613F245F-9F48-402E-A773-4A1F645333D5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Program</RootNamespace>
+    <AssemblyName>Program</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AtencionCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AtencionCliente.Designer.cs">
+      <DependentUpon>frm_AtencionCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Configuracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Configuracion.Designer.cs">
+      <DependentUpon>frm_Configuracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CrearTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CrearTickets.Designer.cs">
+      <DependentUpon>frm_CrearTickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Imprimir_Ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Imprimir_Ticket.Designer.cs">
+      <DependentUpon>frm_Imprimir_Ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Pantalla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Pantalla.Designer.cs">
+      <DependentUpon>frm_Pantalla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SelectorInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SelectorInicio.Designer.cs">
+      <DependentUpon>frm_SelectorInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AtencionCliente.resx">
+      <DependentUpon>frm_AtencionCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CrearTickets.resx">
+      <DependentUpon>frm_CrearTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Imprimir_Ticket.resx">
+      <DependentUpon>frm_Imprimir_Ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Pantalla.resx">
+      <DependentUpon>frm_Pantalla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SelectorInicio.resx">
+      <DependentUpon>frm_SelectorInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\capaAccesoaDatos\capaAccesoaDatos.csproj">
+      <Project>{095f52fd-5ccb-4bcf-8136-95aaf6fb7f30}</Project>
+      <Name>capaAccesoaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\capaLogicadeNegocio\capaLogicadeNegocio.csproj">
+      <Project>{68573249-c63e-4e74-bbe6-82d3424fc862}</Project>
+      <Name>capaLogicadeNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
